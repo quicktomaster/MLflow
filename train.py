@@ -13,9 +13,9 @@ mlflow.set_tracking_uri(remote_server_uri)
 #client = mlflow.tracking.MlflowClient()
 #client.create_experiment('your_experiment_name')
 #mlflow.start_run(run_id=None, experiment_id=3, run_name="Test", nested=False)
-#mlflow.set_experiment('SI_Sent_ES_Political')
+mlflow.set_experiment('SI_Sent_ES_Political')
 #mlflow.source.type="CONSOLE"
-mlflow.start_run(experiment_id=1)
+#mlflow.start_run(experiment_id=1)
 
 tags = {
         'framework':'Spacy',
@@ -86,4 +86,4 @@ for text, _ in TRAINING_DATA:
     doc = nlp2(text)
     print(text, doc.cats)
     
-mlflow.end_run(status='FINISHED')
+#mlflow.end_run(status='FINISHED')
