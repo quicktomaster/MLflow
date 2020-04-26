@@ -6,14 +6,14 @@ from spacy.util import minibatch, compounding
 import mlflow.spacy
 
 experiment_name = 'CONSOLE_RUN'
-remote_server_uri = 'http://si-desa.matrix-evolution.com.co:5001/'
-#remote_server_uri = 'http://127.0.0.1:5000/'
+#remote_server_uri = 'http://si-desa.matrix-evolution.com.co:5001/'
+remote_server_uri = 'http://127.0.0.1:5000/'
 
 mlflow.set_tracking_uri(remote_server_uri)
 #client = mlflow.tracking.MlflowClient()
 #client.create_experiment('your_experiment_name')
 #mlflow.start_run(run_id=None, experiment_id=3, run_name="Test", nested=False)
-#mlflow.set_experiment('CONSOLE_RUN')
+mlflow.set_experiment('SI_Sent_ES_Political')
 #mlflow.source.type="CONSOLE"
 mlflow.start_run(experiment_id=3,run_name="Test", nested=False)
 
