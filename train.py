@@ -5,7 +5,7 @@ import json
 from spacy.util import minibatch, compounding
 import mlflow.spacy
 
-experiment_name = 'CONSOLE_RUN'
+#experiment_name = 'CONSOLE_RUN'
 #remote_server_uri = 'http://si-desa.matrix-evolution.com.co:5001/'
 remote_server_uri = 'http://127.0.0.1:5000/'
 
