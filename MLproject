@@ -1,0 +1,8 @@
+name: SI_Sent_ES_Political
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    command: |
+          python train.py

@@ -1,0 +1,9 @@
+name: mlflow_example
+channels:
+  - defaults
+dependencies:
+  - python=3.7.7
+  - spacy=2.0.16
+  - pip:
+    - mlflow
+    - spacy
